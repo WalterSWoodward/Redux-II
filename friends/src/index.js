@@ -8,7 +8,7 @@ import './index.css';
 import { App } from './components';
 import rootReducer from './reducers/rootReducer';
 
-const middleware = applyMiddleware(logger, thunk);
+const middleware = applyMiddleware( thunk);
 const store = createStore(rootReducer, middleware);
 
 ReactDOM.render(
